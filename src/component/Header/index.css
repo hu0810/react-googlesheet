@@ -1,0 +1,25 @@
+/* 整個header的style */
+.header{
+    margin: 0 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 標題或logo的style */
+h1{
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+/* 右側功能區的style */
+.right-container{
+    display: flex;
+}
+.right-container input{
+    border: 0px;
+    line-height: 2.2em;
+    padding-left: 0.5em;
+    border-bottom:1px #d6d8d9 solid;
+    color: #828283;
+}

@@ -1,0 +1,17 @@
+/* HeaderButton以及InputButton的style */
+button{
+    padding: 0.5em 1em;
+    border: 1px solid transparent;
+    margin: 0.2em;
+    border-radius: 0.2em;
+    display: inline-block;
+}
+button:hover{
+    background-color: #d6d8d9;
+}
+
+
+/* CloseButton的style */
+.icon-close{
+    cursor: pointer;
+}

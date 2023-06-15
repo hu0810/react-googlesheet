@@ -1,0 +1,74 @@
+/* 整個工作區的style */
+.workspace{
+    height:90vh;
+    display: flex;
+}
+
+/* tool-box 以及 contruct-box的基本 */
+.toolbox, .contruct-box{
+    margin: 0.5em;
+    background-color: #e2e3e5;
+    border-radius: 0.2em;
+    padding: 0.5em;
+}
+
+/* tool-box的細節style */
+.toolbox{
+    width: 20%;
+}
+
+/* contruct-box的細節style */
+.contruct-box{
+    position: relative;
+    width: 80%;
+    overflow-y: auto;
+    padding: 0;
+}
+.title{
+    position:sticky;
+    top: 0;
+    background-color: #e2e3e5;
+    padding: 0.5em 0.5em;
+    margin: 0 0.5em;
+    border-bottom: 1px solid #828283;
+}
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+
+  /* sectionBlock 以及 inputBlock的基本style */
+.sectionBlock, .inputBlock{
+    cursor: default;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.5em 0em;
+    border-bottom: 1px solid #828283;
+}
+
+/* sectionBlock的細節style */
+.section-header{
+    cursor: default;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+.drag-indicator{
+    cursor:grab;
+}
+.section-item{
+    cursor: default;
+    background-color: #f0f0f0;
+    margin: 0.5em 0.5em;
+    padding: 0.5em;
+}
+
+/* inputBlock的細節style */
+.input-block{
+    cursor: default !important;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    background-color: #e2e3e5;
+    margin: 0.5em 0em;
+    padding: 0.5em;
+}

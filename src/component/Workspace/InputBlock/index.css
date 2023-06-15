@@ -1,0 +1,57 @@
+/* 整個input的style */
+.input-item {
+  cursor: default;
+  display: flex;
+  gap: 0.5em;
+}
+input {
+  border: 1px solid transparent;
+  line-height: 2em;
+  border-radius: 0.2em;
+}
+select {
+  border: 1px solid transparent;
+  border-radius: 0.2em;
+}
+
+/* 輸入樣式同時含文字輸入以及下拉選單的style */
+.select-card input {
+  width: 3.5em;
+}
+.select-card select {
+  height: 100%;
+  border-radius: 0 0.2em 0.2em 0;
+}
+
+.input-item hr {
+  width: 100%;
+  background-color: #828283;
+}
+
+/* CKEditor 的style*/
+.editor {
+  border-radius: 0.5em;
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: flex-start;
+}
+.edit {
+  width: 100%;
+}
+.editor table {
+  border-collapse: collapse;
+}
+.editor tr,
+td {
+  border: 1px solid #828283;
+}
+.editor blockquote {
+  border-left: 5px solid #ccc;
+  font-style: italic;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
