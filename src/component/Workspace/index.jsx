@@ -212,6 +212,14 @@ const Workspace = () => {
           >
             文字
           </InputButton>
+
+          <InputButton
+            type="image"
+            sectionBlocks={sectionBlocks}
+            setSectionBlocks={setSectionBlocks}
+          >
+            圖片
+          </InputButton>
         </div>
       </div>
       <div className="contruct-box">

@@ -1,0 +1,52 @@
+.image-paste-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .image-paste-area__textarea {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .image-paste-area__textarea:focus {
+    outline: none;
+    border-color: #5c9dff;
+  }
+  
+  .image-paste-area__preview {
+    margin-left: 20px;
+    text-align: center;
+  }
+  
+  .image-paste-area__image {
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .image-paste-area__delete-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #ff5555;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .image-paste-area__delete-btn:hover {
+    background-color: #ff0000;
+  }
+  .image-paste-area__actions {
+    margin-top: 2px;
+  }

@@ -1,9 +1,9 @@
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import Editor from "ckeditor5-self";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import Parse from "html-react-parser";
 import { React, useState } from "react";
 import { MdEditNote } from "react-icons/md";
-
+import ImageUploader from "../ImageUploader";
 import "./index.css";
 
 function InputBlock(props) {
@@ -53,10 +53,18 @@ function InputBlock(props) {
         </div>
       </div>
     );
+  } else if (type === "image") {
+    return (
+      <div className="input-item">
+        <label>圖片：</label>
+        <ImageUploader/>
+      </div>
+    );
   } else if (type === "text") {
     const updateEditorData = (e, editor) => {
       const data = editor.getData();
       setInputText(data);
+      console.log(data);
     };
     const handleShowCKEditor = () => {
       setShowCKEditor({
@@ -72,7 +80,7 @@ function InputBlock(props) {
             style={{ display: showCKEditor.CKEditor ? "inline-block" : "none" }}
           >
             <CKEditor
-              editor={ClassicEditor}
+              editor={Editor}
               data={inputText}
               onChange={updateEditorData}
             />
